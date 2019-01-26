@@ -3,7 +3,7 @@ import CityLogo from '../ui/CityLogo';
 
 const Footer = () => {
   return (
-    <footer className="bck_blue" style={{marginTop: "200px"}}>
+    <footer className="bck_blue">
       <div className="footer-logo">
       <CityLogo 
         height= "70px"

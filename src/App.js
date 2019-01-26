@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 import "./Resources/css/app.css";
 import Layout from "./HOC/Layout";
+import {Switch, Route} from 'react-router-dom';
+import Home from "./Components/Home";
 
 class App extends Component {
   render() {
     return <div>
       <Layout>
-        sup bitches
+        <Switch>
+          <Route exact component={Home} to="/"/>
+        </Switch>
       </Layout>
     </div>
   }
