@@ -13,7 +13,7 @@ class Header extends Component {
         style={{
           backgroundColor: "#98c5e9",
           boxShadow: "none",
-          borderBottom: "1px solid black",
+          borderBottom: '2px solid #00285e',
           padding: "10px 0"
         }}
       >
