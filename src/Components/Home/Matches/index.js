@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Tag } from "../../ui/Misc";
+import Blocks from "./Blocks";
 
 class Matches extends Component {
   render() {
@@ -9,7 +10,7 @@ class Matches extends Component {
           <Tag bgColor="#0e1731" fontSize="50px" color="#ffffff">
             Matches
           </Tag>
-          Block
+          <Blocks />
           <Tag isLink={true} linkTo="/the_team" bgColor="#ffffff" fontSize="22px" color="#0e1731">See more matches</Tag>
         </div>
       </div>
