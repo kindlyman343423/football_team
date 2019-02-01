@@ -14,10 +14,13 @@ const config = {
 
 app.initializeApp(config);
 
-const firebaseDb = app.database();
-const firebaseMatches = firebaseDb.ref("matches")
+const firebaseDB = app.database();
+const firebaseMatches = firebaseDB.ref("matches");
+
+const firebasePromotions = firebaseDB.ref('promotions');
 
 export {
   app,
-  firebaseMatches
+  firebaseMatches,
+  firebasePromotions
 }
