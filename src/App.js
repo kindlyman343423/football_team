@@ -4,12 +4,14 @@ import Layout from "./HOC/Layout";
 import {Switch, Route} from 'react-router-dom';
 import Home from "./Components/Home";
 import SignIn from "./Components/signin";
+import Dashboard from "./Components/admin/Dashboard";
 
 class App extends Component {
   render() {
     return <div>
       <Layout>
         <Switch>
+          <Route exact component={Dashboard} path="/dashboard" />
           <Route exact component={SignIn} path="/signin"/>
           <Route exact component={Home} path="/"/>
         </Switch>
