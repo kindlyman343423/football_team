@@ -10,8 +10,8 @@ class App extends Component {
     return <div>
       <Layout>
         <Switch>
-          <Route exact component={SignIn} to="/signin"/>
-          <Route exact component={Home} to="/"/>
+          <Route exact component={SignIn} path="/signin"/>
+          <Route exact component={Home} path="/"/>
         </Switch>
       </Layout>
     </div>
