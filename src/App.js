@@ -7,12 +7,14 @@ import SignIn from "./Components/signin";
 import Dashboard from "./Components/admin/Dashboard";
 import PrivateRoute from "./Components/auth_routes/PrivateRoute";
 import PublicRoute from "./Components/auth_routes/PublicRoute";
+import AdminMatches from "./Components/admin/matches";
 
 class App extends Component {
   render(props) {
     return <div>
       <Layout>
         <Switch>
+          <PrivateRoute {...this.props} exact component={AdminMatches} path="/admin_matches"/>
           <PrivateRoute {...this.props} exact component={Dashboard} path="/dashboard"/>
           <PublicRoute {...this.props} restricted={true} exact component={SignIn} path="/signin" />
           <PublicRoute {...this.props} exact component={Home} path="/" />
